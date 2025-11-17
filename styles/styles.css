@@ -5,7 +5,6 @@
   --milledoni-light-grey: #f6f5f5;
   --milledoni-white: #ffffff;
   --milledoni-light-yellow: #f9f2d4;
-  --milledoni-yellow: #e2b100;
   --milledoni-purple: #aa2677;
   --milledoni-blue: #466ebf;
   --milledoni-red: #b2291f;
@@ -121,14 +120,14 @@ body {
   }
 
   button:active {
-    background-color: var(--milledoni-yellow);
+    background-color: var(--primary-color);
     color: var(--milledoni-black);
   }
 }
 
 .milledoni-main-chat-input:focus-within {
-  outline: 2px solid var(--milledoni-yellow);
-  border-color: var(--milledoni-yellow);
+  outline: 2px solid var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .milledoni-main-product-container {
@@ -140,7 +139,7 @@ body {
 .milledoni-main-product {
   background-color: var(--milledoni-light-grey);
   padding-inline: 1em;
-  border-top: 6px solid var(--milledoni-yellow);
+  border-top: 6px solid var(--primary-color);
 }
 
 .milledoni-main-product-grid {
@@ -161,7 +160,7 @@ body {
   margin-block-start: 2em;
 }
 .milledoni-footer-email {
-  background-color: var(--milledoni-yellow);
+  background-color: var(--primary-color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -210,7 +209,7 @@ body {
     }
 
     button:active {
-      background-color: var(--milledoni-yellow);
+      background-color: var(--primary-color);
       color: var(--milledoni-black);
     }
   }
@@ -269,7 +268,7 @@ body {
   }
 
   a:hover {
-    color: var(--milledoni-yellow);
+    color: var(--primary-color);
   }
 }
 

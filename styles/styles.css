@@ -1,0 +1,296 @@
+/* do not change */
+:root {
+  --milledoni-black: #212121;
+  --milledoni-grey: #898a8d;
+  --milledoni-light-grey: #f6f5f5;
+  --milledoni-white: #ffffff;
+  --milledoni-light-yellow: #f9f2d4;
+  --milledoni-yellow: #e2b100;
+  --milledoni-purple: #aa2677;
+  --milledoni-blue: #466ebf;
+  --milledoni-red: #b2291f;
+  --milledoni-green: #20a687;
+}
+
+body {
+  font-family: "Parkinsans", sans-serif;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.milledoni-margin {
+  margin-inline: 2em;
+}
+
+/* header styling */
+
+.milledoni-header {
+  display: flex;
+  justify-content: space-between;
+  margin-block: 1em;
+}
+
+.milledoni-header-logo {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  width: 5em;
+}
+
+.milledoni-header-logo-big-letters {
+  display: none;
+
+  @media (min-width: 678px) {
+    display: block;
+  }
+}
+
+.milledoni-header-logo-small-text {
+  display: none;
+
+  @media (min-width: 678px) {
+    display: block;
+  }
+}
+
+.milledoni-header-link-button {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #cbcbcb;
+  border-radius: 2em;
+  text-decoration: none;
+  color: var(--milledoni-black);
+  box-shadow: 0px 0px 10px var(--milledoni-light-grey);
+  transition: 0.5s ease-out;
+}
+
+.milledoni-header-link-button:first-child {
+  margin-inline-end: 1em;
+}
+
+.milledoni-header-link-button:visited {
+  color: var(--milledoni-black);
+}
+.milledoni-header-link-button:hover {
+  box-shadow: 0px 0px 10px var(--milledoni-grey);
+}
+
+/* main styling */
+.milledoni-main {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 678px) {
+    flex-direction: row;
+    gap: 2em;
+  }
+}
+
+.milledoni-main-chat {
+  align-self: flex-end;
+  margin-block: 1em;
+}
+
+.milledoni-main-chat-input {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid black;
+  background-color: var(--milledoni-white);
+  border-radius: 2em;
+
+  input {
+    width: 100%;
+    border: none;
+    border-radius: 2em;
+  }
+  input:focus {
+    outline: none;
+  }
+
+  button {
+    background-color: var(--milledoni-black);
+    color: var(--milledoni-white);
+    border-radius: 50%;
+    border: none;
+    padding: 12px;
+  }
+
+  button:focus {
+    outline: none;
+    background-color: var(--milledoni-green);
+  }
+
+  button:active {
+    background-color: var(--milledoni-yellow);
+    color: var(--milledoni-black);
+  }
+}
+
+.milledoni-main-chat-input:focus-within {
+  outline: 2px solid var(--milledoni-yellow);
+  border-color: var(--milledoni-yellow);
+}
+
+.milledoni-main-product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.milledoni-main-product {
+  background-color: var(--milledoni-light-grey);
+  padding-inline: 1em;
+  border-top: 6px solid var(--milledoni-yellow);
+}
+
+.milledoni-main-product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+
+  @media (min-width: 678px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* footer styling */
+
+.milledoni-footer {
+  display: flex;
+  flex-direction: column;
+  margin-block-start: 2em;
+}
+.milledoni-footer-email {
+  background-color: var(--milledoni-yellow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 2em;
+  padding-block: 1em;
+
+  .milledoni-footer-chat-input {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--milledoni-white);
+    height: 3em;
+    width: 100%;
+
+    @media (forced-colors: active) {
+      border: 2px solid var(--milledoni-white);
+    }
+
+    @media (min-width: 678px) {
+      width: 18em;
+    }
+
+    @media (min-width: 800px) {
+      width: 25em;
+    }
+
+    input {
+      width: 100%;
+      border: none;
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    button {
+      background-color: var(--milledoni-black);
+      color: var(--milledoni-white);
+      border-radius: 50%;
+      border: none;
+      padding: 12px;
+    }
+
+    button:focus {
+      background-color: var(--milledoni-green);
+    }
+
+    button:active {
+      background-color: var(--milledoni-yellow);
+      color: var(--milledoni-black);
+    }
+  }
+
+  .milledoni-footer-chat-input:focus-within {
+    outline: 2px solid var(--milledoni-black);
+  }
+
+  @media (min-width: 678px) {
+    flex-direction: row;
+  }
+}
+
+.milledoni-footer-black-background {
+  background-color: var(--milledoni-black);
+  color: var(--milledoni-white);
+}
+
+.milledoni-footer-info-links,
+.milledoni-footer-copyright {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 2em;
+  margin-block: 1em;
+  flex-wrap: wrap;
+  gap: 1em;
+
+  @media (min-width: 678px) {
+    flex-direction: row;
+    padding: 0;
+    margin-inline: 2em;
+  }
+}
+
+.milledoni-footer-info-logo a {
+  display: flex;
+  flex-direction: column;
+}
+
+.milledoni-footer-info-link-list {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    margin-block: 1em;
+
+    @media (min-width: 678px) {
+      margin: 1em;
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    a {
+      transition: 0.5s ease-out;
+    }
+  }
+
+  a:hover {
+    color: var(--milledoni-yellow);
+  }
+}
+
+.milledoni-footer-info-link-list li a {
+  text-decoration: underline 2px;
+  color: var(--milledoni-white);
+}
+
+.milledoni-footer-copyright-list {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  gap: 1em;
+  margin-block-start: 1em;
+
+  @media (min-width: 678px) {
+    flex-direction: row;
+  }
+}
+
+.milledoni-footer-logo-small-text {
+  width: 100%;
+}

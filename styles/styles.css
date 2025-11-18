@@ -1,15 +1,4 @@
 /* do not change */
-:root {
-  --milledoni-black: #212121;
-  --milledoni-grey: #898a8d;
-  --milledoni-light-grey: #f6f5f5;
-  --milledoni-white: #ffffff;
-  --milledoni-light-yellow: #f9f2d4;
-  --milledoni-purple: #aa2677;
-  --milledoni-blue: #466ebf;
-  --milledoni-red: #b2291f;
-  --milledoni-green: #20a687;
-}
 
 body {
   font-family: "Parkinsans", sans-serif;
@@ -58,8 +47,8 @@ body {
   border: 1px solid #cbcbcb;
   border-radius: 2em;
   text-decoration: none;
-  color: var(--milledoni-black);
-  box-shadow: 0px 0px 10px var(--milledoni-light-grey);
+  color: var(--secondary-color);
+  box-shadow: 0px 0px 10px var(--primary-background);
   transition: 0.5s ease-out;
 }
 
@@ -68,10 +57,10 @@ body {
 }
 
 .milledoni-header-link-button:visited {
-  color: var(--milledoni-black);
+  color: var(--secondary-color);
 }
 .milledoni-header-link-button:hover {
-  box-shadow: 0px 0px 10px var(--milledoni-grey);
+  box-shadow: 0px 0px 10px var(--primary-background);
 }
 
 /* main styling */
@@ -94,7 +83,7 @@ body {
   display: flex;
   flex-direction: row;
   border: 2px solid black;
-  background-color: var(--milledoni-white);
+  background-color: var(--secondary-background);
   border-radius: 2em;
 
   input {
@@ -107,8 +96,8 @@ body {
   }
 
   button {
-    background-color: var(--milledoni-black);
-    color: var(--milledoni-white);
+    background-color: var(--secondary-color);
+    color: var(--secondary-background);
     border-radius: 50%;
     border: none;
     padding: 12px;
@@ -116,12 +105,12 @@ body {
 
   button:focus {
     outline: none;
-    background-color: var(--milledoni-green);
+    background-color: var(--sustainable-label);
   }
 
   button:active {
     background-color: var(--primary-color);
-    color: var(--milledoni-black);
+    color: var(--secondary-color);
   }
 }
 
@@ -137,7 +126,7 @@ body {
 }
 
 .milledoni-main-product {
-  background-color: var(--milledoni-light-grey);
+  background-color: var(--primary-background);
   padding-inline: 1em;
   border-top: 6px solid var(--primary-color);
 }
@@ -171,12 +160,12 @@ body {
   .milledoni-footer-chat-input {
     display: flex;
     flex-direction: row;
-    background-color: var(--milledoni-white);
+    background-color: var(--secondary-background);
     height: 3em;
     width: 100%;
 
     @media (forced-colors: active) {
-      border: 2px solid var(--milledoni-white);
+      border: 2px solid var(--secondary-background);
     }
 
     @media (min-width: 678px) {
@@ -197,25 +186,25 @@ body {
     }
 
     button {
-      background-color: var(--milledoni-black);
-      color: var(--milledoni-white);
+      background-color: var(--secondary-color);
+      color: var(--secondary-background);
       border-radius: 50%;
       border: none;
       padding: 12px;
     }
 
     button:focus {
-      background-color: var(--milledoni-green);
+      background-color: var(--sustainable-label);
     }
 
     button:active {
       background-color: var(--primary-color);
-      color: var(--milledoni-black);
+      color: var(--secondary-color);
     }
   }
 
   .milledoni-footer-chat-input:focus-within {
-    outline: 2px solid var(--milledoni-black);
+    outline: 2px solid var(--secondary-color);
   }
 
   @media (min-width: 678px) {
@@ -224,8 +213,8 @@ body {
 }
 
 .milledoni-footer-black-background {
-  background-color: var(--milledoni-black);
-  color: var(--milledoni-white);
+  background-color: var(--secondary-color);
+  color: var(--secondary-background);
 }
 
 .milledoni-footer-info-links,
@@ -273,8 +262,8 @@ body {
 }
 
 .milledoni-footer-info-link-list li a {
-  text-decoration: underline 2px;
-  color: var(--milledoni-white);
+  text-decoration: none;
+  color: var(--secondary-background);
 }
 
 .milledoni-footer-copyright-list {

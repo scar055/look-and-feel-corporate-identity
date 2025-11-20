@@ -48,7 +48,7 @@ body {
   border-radius: 2em;
   text-decoration: none;
   color: var(--secondary-color);
-  box-shadow: 0px 0px 10px var(--primary-background);
+  box-shadow: 0px 0px 10px var(--primary-background-color);
   transition: 0.5s ease-out;
 }
 
@@ -60,7 +60,7 @@ body {
   color: var(--secondary-color);
 }
 .milledoni-header-link-button:hover {
-  box-shadow: 0px 0px 10px var(--primary-background);
+  box-shadow: 0px 0px 10px var(--primary-background-color);
 }
 
 /* main styling */
@@ -83,7 +83,7 @@ body {
   display: flex;
   flex-direction: row;
   border: 2px solid black;
-  background-color: var(--secondary-background);
+  background-color: var(--secondary-background-color);
   border-radius: 2em;
 
   input {
@@ -97,7 +97,7 @@ body {
 
   button {
     background-color: var(--secondary-color);
-    color: var(--secondary-background);
+    color: var(--secondary-background-color);
     border-radius: 50%;
     border: none;
     padding: 12px;
@@ -105,7 +105,7 @@ body {
 
   button:focus {
     outline: none;
-    background-color: var(--sustainable-label);
+    background-color: var(--sustainable-label-color);
   }
 
   button:active {
@@ -126,7 +126,7 @@ body {
 }
 
 .milledoni-main-product {
-  background-color: var(--primary-background);
+  background-color: var(--primary-background-color);
   padding-inline: 1em;
   border-top: 6px solid var(--primary-color);
 }
@@ -160,12 +160,12 @@ body {
   .milledoni-footer-chat-input {
     display: flex;
     flex-direction: row;
-    background-color: var(--secondary-background);
+    background-color: var(--secondary-background-color);
     height: 3em;
     width: 100%;
 
     @media (forced-colors: active) {
-      border: 2px solid var(--secondary-background);
+      border: 2px solid var(--secondary-background-color);
     }
 
     @media (min-width: 678px) {
@@ -187,14 +187,14 @@ body {
 
     button {
       background-color: var(--secondary-color);
-      color: var(--secondary-background);
+      color: var(--secondary-background-color);
       border-radius: 50%;
       border: none;
       padding: 12px;
     }
 
     button:focus {
-      background-color: var(--sustainable-label);
+      background-color: var(--sustainable-label-color);
     }
 
     button:active {
@@ -214,7 +214,7 @@ body {
 
 .milledoni-footer-black-background {
   background-color: var(--secondary-color);
-  color: var(--secondary-background);
+  color: var(--secondary-background-color);
 }
 
 .milledoni-footer-info-links,
@@ -263,7 +263,7 @@ body {
 
 .milledoni-footer-info-link-list li a {
   text-decoration: none;
-  color: var(--secondary-background);
+  color: var(--secondary-background-color);
 }
 
 .milledoni-footer-copyright-list {

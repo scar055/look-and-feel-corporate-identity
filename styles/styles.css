@@ -1,7 +1,7 @@
 /* do not change */
 
 body {
-  font-family: "Parkinsans", sans-serif;
+  font-family: Parkinsans, sans-serif;
   line-height: 1.4;
   margin: 0;
 }
@@ -137,7 +137,7 @@ body {
   gap: 1em;
 
   @media (min-width: 678px) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 

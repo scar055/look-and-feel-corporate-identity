@@ -129,15 +129,20 @@ body {
   background-color: var(--primary-background-color);
   padding-inline: 1em;
   border-top: 6px solid var(--primary-color);
+
+  .product-title {
+    text-align: center;
+  }
 }
 
 .milledoni-main-product-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1em;
+  padding-block-end: 1em;
 
   @media (min-width: 678px) {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 

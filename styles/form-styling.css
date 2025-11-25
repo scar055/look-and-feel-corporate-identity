@@ -18,10 +18,16 @@ fieldset {
   display: flex;
   flex-direction: column;
   background-color: var(--secondary-background-color);
-  border-style: solid;
+  border: none;
   border-radius: 10px;
   margin-block-end: 1em;
   padding-block-start: 1em;
+
+  legend {
+    float: left;
+    font-size: var(--font-size-subject);
+    margin-block-end: 2em;
+  }
 
   label {
     padding-inline-end: 1em;
@@ -31,6 +37,7 @@ fieldset {
   }
 
   input {
+    margin-block-start: 0.5em;
     margin-block-end: 1em;
     max-width: 50ch;
     width: 100%;
@@ -39,6 +46,8 @@ fieldset {
   }
 
   textarea {
+    margin-block-start: 0.5em;
+    margin-block-end: 1em;
     max-width: 50ch;
     width: 100%;
     padding-left: 0;

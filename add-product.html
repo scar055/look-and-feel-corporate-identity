@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://scar055.github.io/look-and-feel-styleguide/styleguide-milledoni.css">
     <link rel="stylesheet" href="styles/main-styling.css">
+    <link rel="stylesheet" href="styles/form-styling.css">
     <title>Add Product</title>
 </head>
 
@@ -81,27 +82,33 @@
             <fieldset>
                 <legend>Tell us about your company</legend>
                 <label class="form-label-text">
-                    <input type="text" name="name" class="input-label-text" placeholder="Your full name">
+                    name
+                    <input type="text" name="name" class="input-label-text" placeholder="Federica Foroni Lo Faro">
                 </label>
                 <label class="form-label-text">
-                    <input type="text" name="company-name" class="input-label-text" placeholder="Your full name">
+                    company name
+                    <input type="text" name="company-name" class="input-label-text" placeholder="Milledoni">
                 </label>
                 <label class="form-label-textarea">
-                    <textarea class="label-textarea" placeholder="..."></textarea>
+                    about your company
+                    <textarea class="label-textarea"
+                        placeholder="Our company inspires people with idea's for gifts"></textarea>
                 </label>
             </fieldset>
             <fieldset>
                 <legend>submit your product for approval</legend>
                 <label class="form-label-text">
-                    <input type="text" name="info-link" class="input-label-text"
-                        placeholder="insert website link or google maps link for local store">
+                    link to the websit or a google maps link.
+                    <input type="text" name="info-link" class="input-label-text" placeholder="https://milledoni.nl/">
                 </label>
                 <label class="form-label-text">
-                    <input type="text" name="name-product" class="input-label-text" placeholder="name gift">
+                    name gift
+                    <input type="text" name="name-product" class="input-label-text" placeholder="bike">
                 </label>
                 <label class="form-label-textarea">
+                    why would you give this product as a gift to someone?
                     <textarea class="label-textarea"
-                        placeholder="why would you give this product as a gift to someone"></textarea>
+                        placeholder="i would give this gift to someone because ..."></textarea>
                 </label>
                 <label class="file-picture">
                     upload picture/s
@@ -112,7 +119,7 @@
                     <input id="file-input" name="picture" type="file" accept="image/*">
                 </label>
             </fieldset>
-            <input type="submit" value="Submit button" class="submit-button">
+            <input type="submit" value="Submit" class="submit-button">
         </form>
     </main>
 

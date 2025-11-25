@@ -2,7 +2,7 @@
 
 body {
   font-family: Parkinsans, sans-serif;
-  line-height: 1.4;
+  line-height: var(--line-height-text);
   margin: 0;
 }
 

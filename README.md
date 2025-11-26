@@ -15,6 +15,10 @@ Milledoni website design uitwerking
 <!-- Voeg een link toe naar Github Pages 🌐-->
 https://scar055.github.io/look-and-feel-corporate-identity/
 
+Dit is een uitwerking in code van het design van milledoni de eerste pagina is een responsive home pagina.
+Als je op het account icon button klikt dan ga je naar de formulier pagina die het design na is gemaakt wanneer een bedrijf een product wilt toevoegen.
+
+
 nieuwe product cards.
 <img width="562" height="335" alt="image" src="https://github.com/user-attachments/assets/6b4798cb-a5bd-4bcb-9c85-640f6bfb189d" />
 

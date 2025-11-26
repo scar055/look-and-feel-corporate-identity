@@ -153,13 +153,15 @@ body {
 }
 
 .milledoni-main-product-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-block-end: 1em;
 
   @media (min-width: 678px) {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
   }
 }
 
